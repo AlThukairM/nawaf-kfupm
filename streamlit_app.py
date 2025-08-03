@@ -341,5 +341,24 @@ def main():
         st.header("Results & Ranking")
         st.table(results_df)
 
+    
+    footer_html = """
+    <style>
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    </style>
+    <div class="footer">
+        <p>For more information or inquiries, you may reach out <a href="mailto:nawaf.alrasheed5@gmail.com">via email</a></p>
+    </div>
+    """
+
+    st.markdown(footer_html, unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
